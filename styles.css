@@ -1,0 +1,37 @@
+
+.selector-for-some-widget {
+
+  box-sizing: content-box;
+}
+
+body {
+
+  font-family: 'Outfit', sans-serif;
+}
+
+.intro-section {
+
+  min-height: 66vh;
+  background-image: url('travel.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.intro-section h1 {
+
+  font-size: 50px;
+  font-weight: 800px;
+}
+
+.resort-title {
+
+  color: #ddd80d;
+}
+
+.intro-card {
+
+  height: 30vh;
+  margin-top: -15vh;
+  background-color: white;
+  border: solid 1px #929292;
+}

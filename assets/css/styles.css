@@ -18,7 +18,7 @@ body {
 .intro-section {
 
   min-height: 66vh;
-  background-image: url('travel.jpg');
+  background-image: url('/assets/images/travel.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -66,16 +66,7 @@ body {
 
 .search-bar {
 
-  float: right;
-  margin-top: -12px;
-}
-
-.search-section input {
-
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  width: 100px;
+  margin-bottom: 12px;
 }
 
 .search-section button {
@@ -84,6 +75,8 @@ body {
   border: 0;
   color: blue;
   font-size: 20px;
+  margin-top: -8px;
+  float: right;
 }
 
 .search-section button:hover {
@@ -129,7 +122,7 @@ body {
 
 .search-icons {
 
-  margin-top: 18%;
+  margin-top: 10%;
 }
 
 .search-icons img {
@@ -185,6 +178,11 @@ body {
 
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+}
+
+.cards-more-option .slide-view {
+
+  display: none;
 }
 
 .base-more-option {
@@ -257,7 +255,7 @@ body {
   height: 300px;
   width: 90%;
   border-radius: 10px;
-  background-image: url('treatment_room.jpg');
+  background-image: url('/assets/images/treatment_room.jpg');
   background-size: cover;
 }
 
@@ -316,6 +314,7 @@ body {
 .carousel-indicators li {
 
   text-indent: 0;
+  box-sizing: border-box;
 }
 
 .top-airline-details {
@@ -351,4 +350,275 @@ body {
 
   width: 100%;
   color: gray;
+}
+
+.rights-text {
+
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+
+  .facilities-details {
+
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 938px) {
+
+  .top-airline-details {
+
+    height: 58vh;
+  }
+}
+
+@media screen and (max-width: 860px) {
+
+  .cards-more-option .normal-view {
+
+    display: none;
+  }
+
+  .cards-more-option .slide-view {
+
+    display: block;
+  }
+
+  .cards-more-option .card {
+
+    width: 44vw;
+  }
+
+  .slide-view .carousel-inner img {
+
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .facility-selection {
+
+    margin-bottom: 20px;
+  }
+
+  .intro-card {
+
+    margin-top: -24vh;
+  }
+
+  .more-detail-img {
+
+    margin-top: 44px;
+  }
+
+  .resort-detail-area {
+
+    margin-bottom: 0;
+  }
+
+  .top-airline-details {
+
+    height: 64vh;
+  }
+
+  .top-airline-image {
+
+    right: -6px;
+  }
+
+  .top-airline-image img {
+
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .top-airline-image img {
+
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .first-area {
+
+    padding: 0;
+  }
+
+  .first-area .intro-section {
+
+    border-radius: 0;
+  }
+
+  .first-area .intro-card {
+
+    margin-left: 24px !important;
+    margin-right: 24px !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .heading-more-options {
+
+    font-size: 36px;
+  }
+
+  .search-icons img {
+
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .top-airline-details {
+
+    height: 56vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .top-airline-image {
+
+    right: -4px;
+    bottom: -40px;
+  }
+
+  .cards-more-option .card {
+
+    width: 64vw;
+  }
+
+  .top-airline-image img {
+
+    width: 220px;
+  }
+
+  .top-airline-details {
+
+    height: 56vh;
+  }
+}
+
+@media screen and (max-width: 460px) {
+
+  .top-airline-image {
+
+    right: -12px;
+    bottom: -40px;
+  }
+
+  .top-airline-details .jumbotron {
+
+    top: 20px;
+  }
+
+  .top-airline-image img {
+
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+
+  .top-airline-image {
+
+    right: -34px;
+  }
+
+  .top-airline-details .jumbotron {
+
+    top: 18px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .top-airline-details {
+
+    height: 66vh;
+  }
+
+  .top-airline-details .jumbotron {
+
+    top: 16px;
+  }
+
+  .top-airline-image img {
+
+    /* display: none; */
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .intro-card {
+
+    margin-top: -10vh;
+  }
+
+  .top-airline-details {
+
+    height: 56vh;
+  }
+
+  .top-airline-details .jumbotron {
+
+    top: 16px;
+  }
+
+  .top-airline-image img {
+
+    /* display: none; */
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .top-airline-details {
+
+    height: 76vh;
+  }
+
+  .top-airline-details .jumbotron {
+
+    top: 16px;
+  }
+
+  .top-airline-image img {
+
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .intro-card {
+
+    margin-top: 6vh;
+  }
+
+  .top-airline-details {
+
+    height: 56vh;
+  }
+
+  .top-airline-details .jumbotron {
+
+    top: 16px;
+  }
+
+  .top-airline-image img {
+
+    /* display: none; */
+  }
 }

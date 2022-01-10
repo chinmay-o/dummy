@@ -18,7 +18,7 @@ body {
 .intro-section {
 
   min-height: 66vh;
-  background-image: url('/assets/images/travel.jpg');
+  background-image: url('../images/travel.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -255,7 +255,7 @@ body {
   height: 300px;
   width: 90%;
   border-radius: 10px;
-  background-image: url('/assets/images/treatment_room.jpg');
+  background-image: url('..images/treatment_room.jpg');
   background-size: cover;
 }
 

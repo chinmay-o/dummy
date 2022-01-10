@@ -255,7 +255,7 @@ body {
   height: 300px;
   width: 90%;
   border-radius: 10px;
-  background-image: url('..images/treatment_room.jpg');
+  background-image: url('../images/treatment_room.jpg');
   background-size: cover;
 }
 

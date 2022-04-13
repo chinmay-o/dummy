@@ -2,43 +2,53 @@
 /* Universal Conditions */
 body {
 
-  font-family: 'Noto Sans', sans-serif;
+  /* font-family: 'Noto Sans', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* header section background */
+/* navigation bar start */
+.nav-item a {
+
+  color: black;
+  font-size: 18px;
+}
+
+.navbar-toggler:focus {
+
+  box-shadow: 0 0 0 0;
+}
+/* navigation bar end */
+
+
+/* header section start */
 .header-section-bg {
 
   background-image: url(../images/3089023.jpg);
   background-repeat: no-repeat;
-  min-height: 90vh;
   position: relative;
 }
 
-/* first section */
 .first-section-text {
 
-  padding-top: 22vh;
+  padding-top: 24vh;
+  padding-bottom: 24vh;
 }
 
-/* search destination */
 .search-nav-section {
 
   background-color: #FFF;
   border-radius: 6px;
   position: relative;
-  top: 210px;
   z-index: 1000;
   box-shadow: 0px 6px 20px 0px #00000042;
 }
 
-/* search input */
 .search-input {
 
   height: 12vh;
   text-align: center;
 }
 
-/* search input text */
 .search-input p {
 
   line-height: 12vh;
@@ -46,7 +56,6 @@ body {
   font-weight: 600;
 }
 
-/* search input submit button */
 .search-input-submit p {
 
   background-color: #8ddfc7;
@@ -54,9 +63,366 @@ body {
   border-bottom-right-radius: 6px;
 }
 
-/* wave ending */
 .curve-svg svg {
 
   position: absolute;
   bottom: 0;
+}
+/* header section end */
+
+
+/* destination grid start */
+.destination-img {
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.destination-title {
+
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+}
+
+.destination-card {
+
+  height: 18rem;
+  border-radius: 10px;
+}
+
+.destination-card-lg {
+
+  height: 100%;
+  border-radius: 10px;
+}
+/* destination grid end */
+
+
+/* testimonial style start*/
+.testimonial-section {
+
+  position: relative;
+  width: -webkit-fill-available;
+}
+
+.testimonial-portion-one {
+
+  height: 60vh;
+  background: #e3fff7;
+}
+
+.testimonial-portion-two {
+
+  height: 60vh;
+  background: #1c9888;
+}
+
+.testimonial-carousel {
+
+  position: absolute;
+  bottom: 10vh;
+  max-width: -webkit-fill-available;
+  padding-left: 100px;
+}
+
+.testimonial-card {
+
+  border-radius: 18px;
+}
+
+.testimonial-card img {
+
+  width: 60px;
+  border-radius: 50px;
+}
+
+.absolute-row {
+
+  --bs-gutter-x: none;
+}
+/* testimonial style end*/
+
+
+/* book now section start */
+.book-now-content {
+
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.book-now-content h1 {
+
+  color: white;
+}
+/* book now section end */
+
+
+/* footer section start */
+.footer-area {
+
+  background: #d2d2d2;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-tag a {
+
+  text-decoration: none;
+}
+
+.contact-icons {
+
+  font-size: 24px;
+}
+
+.footer-options {
+
+  text-align: -webkit-right;
+}
+
+.option-content {
+
+  width: fit-content;
+}
+
+.page-links {
+
+  justify-content: end;
+}
+/* footer section area */
+
+
+/* slider style start */
+.slider-img {
+
+  height: 240px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.swiper {
+
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+
+  text-align: start;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-radius: 18px;
+}
+/* slider style end */s
+
+
+/* Featured hotels style start */
+.hotel-slider {
+
+  padding-left: 100px;
+}
+
+.checked {
+
+  color: orange;
+}
+
+.hotel-card {
+
+  border-radius: 18px;
+}
+
+.hotel-card .card {
+
+  border-radius: 18px;
+}
+
+.hotel-card img {
+
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+/* Featured hotels style end */
+
+
+@media only screen and (max-width: 1021px) {
+
+  .testimonial-carousel {
+
+    bottom: 7vh;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+  /* destination large cards */
+  .destination-card-lg {
+
+    height: 18rem;
+    border-radius: 10px;
+  }
+
+  .footer-options {
+
+    text-align: -webkit-left;
+    margin-top: 40px;
+  }
+
+  .footer-tag {
+
+    text-align: center;
+  }
+
+  .page-links {
+
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 994px) {
+
+  .testimonial-carousel {
+
+    bottom: 5vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .testimonial-carousel {
+
+    bottom: 10vh;
+  }
+}
+
+@media only screen and (max-width: 827px) {
+
+  .testimonial-carousel {
+
+    bottom: 7vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .testimonial-portion-one {
+
+    height: 28vh;
+  }
+
+  .testimonial-portion-two {
+
+    height: 36vh;
+  }
+
+  .testimonial-carousel {
+
+    bottom: 7vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .testimonial-portion-one {
+
+    height: 34vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .testimonial-carousel {
+
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  /* Featured Hotel Card */
+  .hotel-slider {
+
+    padding-left: 0
+  }
+}
+
+@media only screen and (max-width: 487px) {
+
+  .testimonial-portion-one {
+
+    height: 36vh;
+  }
+
+  .testimonial-carousel {
+
+    bottom: 6vh;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+
+  .testimonial-portion-one {
+
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+
+  .testimonial-portion-one {
+
+    height: 34vh;
+  }
+
+  .testimonial-heading h5 {
+
+    font-size: 18px;
+  }
+
+  .testimonial-heading p {
+
+    font-size: 16px;
+  }
+
+  .testimonial-card {
+
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+
+  .testimonial-portion-one {
+
+    height: 48vh;
+  }
+}
+
+@media only screen and (max-width: 347px) {
+
+  .testimonial-portion-one {
+
+    height: 44vh;
+  }
 }

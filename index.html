@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,21 @@
 
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- CDN Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
+  <!-- intro section start -->
   <section>
 
     <!-- header section start -->
@@ -23,26 +33,28 @@
       <div class="">
         <nav class="navbar navbar-expand-lg pt-4">
           <div class="container ps-lg-5 pe-lg-5">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.png" alt="" height="50">
+            </a>
+            <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+                <li class="nav-item ps-lg-2">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
+                <li class="nav-item ps-lg-4">
+                  <a class="nav-link" href="#">About</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                <li class="nav-item ps-lg-4">
+                  <a class="nav-link" href="#">Packages</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                <li class="nav-item ps-lg-4">
+                  <a class="nav-link" href="#">Testimony</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                <li class="nav-item ps-lg-4">
+                  <button class="btn btn-light" type="button" name="button">Book Now</button>
                 </li>
               </ul>
             </div>
@@ -87,8 +99,8 @@
       <!-- curved wave start -->
       <div class="curve-svg">
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#FFF" fill-opacity="1" d="M0,288L80,266.7C160,245,320,203,480,202.7C640,203,800,245,960,256C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        <svg id="svg" viewBox="0 0 1440 240" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+          <path d="M 0,400 C 0,400 0,200 0,200 C 116.93333333333334,174.39999999999998 233.86666666666667,148.79999999999998 409,162 C 584.1333333333333,175.20000000000002 817.4666666666667,227.20000000000002 999,240 C 1180.5333333333333,252.79999999999998 1310.2666666666667,226.39999999999998 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#FFF" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
         </svg>
 
       </div>
@@ -98,8 +110,429 @@
     <!-- header section end -->
 
   </section>
+  <!-- intro section end -->
+
+
+  <!-- Destination Grid Start -->
+  <section class="container mt-5 pt-4">
+
+    <!-- Header Start -->
+    <div class="text-center">
+      <h2> <b>Top Destinations</b> </h2>
+      <p>Take the vacation you always wanted</p>
+    </div>
+    <!-- Header End -->
+
+    <!-- destination grid start -->
+    <div class="container ps-lg-5 pe-lg-5">
+      <div class="row gy-4">
+        <div class="col-lg-8 col-sm-12">
+          <div class="row gy-4">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="card destination-card" style="height: 18rem; border-radius: 10px;">
+                <img class="destination-img" src="assets/images/pexels-168.jpeg" alt="">
+                <h4 class="destination-title">Destination</h4>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="card destination-card" style="height: 18rem; border-radius: 10px;">
+                <img class="destination-img" src="assets/images/pexels-168.jpeg" alt="">
+                <h4 class="destination-title">Destination</h4>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12">
+              <div class="card destination-card" style="height: 18rem; border-radius: 10px;">
+                <img class="destination-img" src="assets/images/pexels-168.jpeg" alt="">
+                <h4 class="destination-title">Destination</h4>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+              <div class="card destination-card" style="height: 18rem; border-radius: 10px;">
+                <img class="destination-img" src="assets/images/pexels-168.jpeg" alt="">
+                <h4 class="destination-title">Destination</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card destination-card-lg">
+            <img class="destination-img" src="assets/images/pexels-168.jpeg" alt="">
+            <h4 class="destination-title">Destination</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- destination grid end -->
+
+  </section>
+  <!-- Destination Grid End -->
+
+  <!-- Featured Hotels Slide Start -->
+  <section class="mt-5 pt-4">
+
+    <!-- Header Start -->
+    <div class="container text-center">
+      <h2> <b>Our Featured Hotels</b> </h2>
+      <p>Exclusively partnered sanitised stays</p>
+    </div>
+    <!-- Header End -->
+
+    <!-- Hotels Slider Start -->
+    <div class="hotel-slider">
+      <div id="mySwiper" class="swiper">
+        <div class="swiper-wrapper">
+
+          <!-- hotel single card -->
+          <div class="swiper-slide hotel-card">
+            <div class="card" style="width: 20rem;">
+              <img class="slider-img" src="assets/images/pexels-168.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ps-4">ABC International</h5>
+                <div class="d-flex">
+                  <h6 class="card-text ps-4 pt-1">Kannur</h6>
+                  <div class="ps-2">
+                    <div class="rate">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- hotel single card -->
+          <div class="swiper-slide hotel-card">
+            <div class="card" style="width: 20rem;">
+              <img class="slider-img" src="assets/images/pexels-168.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ps-4">Tentgram</h5>
+                <div class="d-flex">
+                  <h6 class="card-text ps-4 pt-1">Wayanad</h6>
+                  <div class="ps-2">
+                    <div class="rate">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- hotel single card -->
+          <div class="swiper-slide hotel-card">
+            <div class="card" style="width: 20rem;">
+              <img class="slider-img" src="assets/images/pexels-168.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ps-4">Maya Inn</h5>
+                <div class="d-flex">
+                  <h6 class="card-text ps-4 pt-1">Kollom</h6>
+                  <div class="ps-2">
+                    <div class="rate">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- hotel single card -->
+          <div class="swiper-slide hotel-card">
+            <div class="card" style="width: 20rem;">
+              <img class="slider-img" src="assets/images/pexels-168.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ps-4">Kairali Inn</h5>
+                <div class="d-flex">
+                  <h6 class="card-text ps-4 pt-1">Trivandrum</h6>
+                  <div class="ps-2">
+                    <div class="rate">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- hotel single card -->
+          <div class="swiper-slide hotel-card">
+            <div class="card" style="width: 20rem;">
+              <img class="slider-img" src="assets/images/pexels-168.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ps-4">Hayatt Inn</h5>
+                <div class="d-flex">
+                  <h6 class="card-text ps-4 pt-1">Kochi</h6>
+                  <div class="ps-2">
+                    <div class="rate">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+    </div>
+    <!-- Hotels Slider End -->
+
+    <!-- Testimonials Start -->
+    <div class="testimonial-section mt-5">
+      <div class="row absolute-row">
+        <div class="col-lg-7 col-md-6 col-sm-12 testimonial-portion-one">
+
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12 testimonial-portion-two">
+
+        </div>
+      </div>
+      <div class="testimonial-carousel">
+        <div class="row align-items-center absolute-row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="testimonial-text">
+              <h2> <b>Customer <br> Reviews</b> </h2>
+              <p class="pe-4">Our hundred of happy travelers will vouch for us</p>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+
+            <!-- Slider main container -->
+            <div id="testimonial-swipper" class="swiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-card card">
+                    <div class="card-body">
+                      <div class="d-flex mt-2">
+                        <img class="mx-4" src="assets/images/qrcode.png" alt="">
+                        <div class="testimonial-heading">
+                          <h5 class="card-title ps-4">Customer Name</h5>
+                          <h6 class="card-text ps-4 pt-1">Travelled to paris</h6>
+                        </div>
+                      </div>
+                      <div class="testimonial-content ps-4 pe-2 pt-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna
+                          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                          ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-card card">
+                    <div class="card-body">
+                      <div class="d-flex mt-2">
+                        <img class="mx-4" src="assets/images/qrcode.png" alt="">
+                        <div class="testimonial-heading">
+                          <h5 class="card-title ps-4">Customer Name</h5>
+                          <h6 class="card-text ps-4 pt-1">Travelled to paris</h6>
+                        </div>
+                      </div>
+                      <div class="testimonial-content ps-4 pe-2 pt-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna
+                          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                          ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-card card">
+                    <div class="card-body">
+                      <div class="d-flex mt-2">
+                        <img class="mx-4" alt="">
+                        <div class="testimonial-heading">
+                          <h5 class="card-title ps-4">Customer Name</h5>
+                          <h6 class="card-text ps-4 pt-1">Travelled to paris</h6>
+                        </div>
+                      </div>
+                      <div class="testimonial-content ps-4 pe-2 pt-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna
+                          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                          ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonials Start -->
+  </section>
+
+  <!-- Book Now Section Start -->
+  <section>
+    <div class="">
+      <div class="book-now-content text-center" style="background-image: url(assets/images/flight.jpg);">
+        <h1 class="">Your Vacation Starts Here</h1>
+        <button class="btn btn-light mt-4" type="button" name="button">Book Now</button>
+      </div>
+    </div>
+  </section>
+  <!-- Book Now Section End -->
+
+  <footer class="footer-area">
+    <div class="container ps-lg-5 pe-lg-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img src="assets/images/logo.png" width="100px" alt="">
+          <p class="pt-2 pr-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="contact-icons d-flex">
+            <div class="d-flex">
+              <a class="pe-2" href="#">
+                <i class="fa fa-whatsapp"></i>
+              </a>
+              <a class="px-2" href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a class="px-2" href="#">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-options col-lg-3 col-md-6 col-sm-12">
+          <div class="option-content">
+            <h4 class="ps-2">Explore</h4>
+            <ul>
+              <li>Option</li>
+              <li>Option</li>
+              <li>Option</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-options col-lg-3 col-md-6 col-sm-12">
+          <div class="option-content">
+            <h4 class="ps-2">Our Service</h4>
+            <ul class="text-start">
+              <li>Option</li>
+              <li>Option</li>
+              <li>Option</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-tag mt-5">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <p>Copyright 2021 Dataroots Technologies Pvt. Ltd</p>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="d-flex page-links">
+              <a class="px-2" href="#">About Us</a> |
+              <a class="px-2" href="#">Service</a> |
+              <a class="px-2" href="#">Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
   <script src="assets/bootstrap/js/bootstrap.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiperA = new Swiper("#mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        500: {
+          slidesPerView: 1.4,
+          spaceBetween: 10,
+        },
+        600: {
+          slidesPerView: 1.6,
+          spaceBetween: 10,
+        },
+        700: {
+          slidesPerView: 1.8,
+          spaceBetween: 10,
+        },
+        800: {
+          slidesPerView: 2.4,
+          spaceBetween: 10,
+        },
+        900: {
+          slidesPerView: 2.8,
+          spaceBetween: 10,
+        },
+        1200: {
+          slidesPerView: 3.8,
+          spaceBetween: 10,
+        },
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var swiperB = new Swiper("#testimonial-swipper", {
+
+      slidesPerView: 1,
+      spaceBetween: 30,
+
+      breakpoints: {
+        900: {
+          slidesPerView: 1.5,
+          spaceBetween: 30,
+        },
+        601: {
+          slidesPerView: 1.2,
+          spaceBetween: 30,
+        },
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+      },
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
+    });
+
+    </script>
+
 </body>
 </html>

@@ -54,7 +54,7 @@
                   <a class="nav-link" href="#">Testimony</a>
                 </li>
                 <li class="nav-item ps-lg-4">
-                  <button class="btn btn-light" type="button" name="button">Book Now</button>
+                  <button class="btn btn-light primary-button" type="button" name="button">Book Now</button>
                 </li>
               </ul>
             </div>
@@ -400,7 +400,7 @@
     <div class="">
       <div class="book-now-content text-center" style="background-image: url(assets/images/flight.jpg);">
         <h1 class="">Your Vacation Starts Here</h1>
-        <button class="btn btn-light mt-4" type="button" name="button">Book Now</button>
+        <button class="btn btn-light mt-4 primary-button" type="button" name="button">Book Now</button>
       </div>
     </div>
   </section>
@@ -471,68 +471,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
-  <script>
-    var swiperA = new Swiper("#mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      breakpoints: {
-        500: {
-          slidesPerView: 1.4,
-          spaceBetween: 10,
-        },
-        600: {
-          slidesPerView: 1.6,
-          spaceBetween: 10,
-        },
-        700: {
-          slidesPerView: 1.8,
-          spaceBetween: 10,
-        },
-        800: {
-          slidesPerView: 2.4,
-          spaceBetween: 10,
-        },
-        900: {
-          slidesPerView: 2.8,
-          spaceBetween: 10,
-        },
-        1200: {
-          slidesPerView: 3.8,
-          spaceBetween: 10,
-        },
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-
-    var swiperB = new Swiper("#testimonial-swipper", {
-
-      slidesPerView: 1,
-      spaceBetween: 30,
-
-      breakpoints: {
-        900: {
-          slidesPerView: 1.5,
-          spaceBetween: 30,
-        },
-        601: {
-          slidesPerView: 1.2,
-          spaceBetween: 30,
-        },
-        300: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-        },
-      },
-      // navigation: {
-      //   nextEl: '.swiper-button-next',
-      //   prevEl: '.swiper-button-prev',
-      // },
-    });
-
-    </script>
+  <script src="assets/js/swiper.js"></script>
 
 </body>
 </html>

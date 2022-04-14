@@ -177,6 +177,13 @@ body {
   border-radius: 50px;
 }
 
+.testimonial-pagination {
+
+  text-align: end;
+  padding-right: 30px;
+  font-size: 30px;
+}
+
 .absolute-row {
 
   --bs-gutter-x: none;

@@ -52,4 +52,9 @@ var swiperB = new Swiper("#testimonial-swipper", {
       spaceBetween: 30,
     },
   },
+  pagination: {
+
+    el: '.testimonial-pagination',
+    type: 'bullets',
+  },
 });
